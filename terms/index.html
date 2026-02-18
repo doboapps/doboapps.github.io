@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - DOBO Apps</title>
+  <style>
+    body{ margin:0; font-family: Arial, sans-serif; background:#fff; color:#111; }
+    .wrap{ max-width: 900px; margin: 0 auto; padding: 40px 16px; }
+    h1{ font-size: 34px; margin: 0 0 10px; }
+    h2{ margin-top: 28px; }
+    p, li{ line-height: 1.6; }
+    .muted{ color:#555; }
+    .toplinks a{ margin-right: 12px; }
+    a{ color:#1a73e8; }
+    .lang{ font-weight:700; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="muted">DOBO Apps</p>
+
+    <p class="muted">
+      Language parameter detected: <span class="lang" id="lang">en</span>
+    </p>
+
+    <h2>Overview</h2>
+    <p>
+      This Privacy Policy explains how DOBO Apps collects, uses, and shares information when you use our mobile applications.
+    </p>
+
+    <h2>Information we collect</h2>
+    <ul>
+      <li>App usage data (e.g., interactions, basic diagnostics).</li>
+      <li>Device information (e.g., device model, OS version, identifiers as allowed by the platform).</li>
+      <li>Advertising data (if the app shows ads).</li>
+    </ul>
+
+    <h2>How we use information</h2>
+    <ul>
+      <li>To provide and improve the app.</li>
+      <li>To measure performance and fix issues.</li>
+      <li>To show and measure ads (if applicable).</li>
+    </ul>
+
+    <h2>Third-party services</h2>
+    <p>
+      Our apps may use third-party services (for example, analytics or advertising providers) that may collect information used to identify you.
+      Please review their privacy policies for more details.
+    </p>
+
+    <h2>Data retention</h2>
+    <p>
+      We retain information only as long as necessary for the purposes described in this policy or as required by law.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>You can uninstall the app at any time to stop data collection by the app.</li>
+      <li>You can manage ad personalization from your device settings (where available).</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>
+      If you have questions about this Privacy Policy, contact us at:
+      <a href="mailto:contact@doboapps.online">contact@doboapps.online</a>
+    </p>
+
+    <p class="muted">Last updated: <span id="updated">2026-02-18</span></p>
+  </main>
+
+  <script>
+    // Reads ?lang=es|de|it|en and displays it (optional)
+    const params = new URLSearchParams(location.search);
+    const lang = (params.get('lang') || 'en').toLowerCase();
+    document.getElementById('lang').textContent = lang;
+    document.documentElement.lang = lang;
+  </script>
+</body>
+</html>
